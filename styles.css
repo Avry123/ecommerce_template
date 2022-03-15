@@ -1,0 +1,609 @@
+
+.header_10 {
+  width: 100vw;
+  height: 10vh;
+}
+
+/* NAV */
+
+header {
+  width: 100%;
+  background: white;
+  position: fixed;
+  z-index: 999;
+}
+
+.bars {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 0.2fr 0.2fr;
+}
+
+.bar_links {
+  display: none;
+}
+
+.cart {
+  grid-column:2/3;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart_letter {
+  position: absolute;
+  font-weight: bold;
+  color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+   width: 20%;
+  height: 40%;
+}
+
+.profile_photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_10 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.three_dash {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav_toggle {
+  display: none;
+}
+
+
+#nav_toggle:checked ~ nav {
+  display: none;
+}
+
+ul {
+  margin: 0px;
+  padding:0px;
+}
+
+ul li  {
+  list-style: none;
+  margin:0px 0px 1em 0px;
+  padding:0px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Nav */
+
+.commerce {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.commerce_left {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* This is the one inside the left part */
+.commerce_left_10 {
+  width: 60%;
+  height: 80%;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+}
+
+.left_10_img {
+  grid-row:1/2 ;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The buttons for left_10_img */
+
+.shoe_img_button {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+.shoe_img_left , .shoe_img_right {
+  background: transparent;
+  border:0px;
+  font-size: 3vh;
+}
+
+/* This is the img inside the left_10_img */
+.img_shoe {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  position: absolute;
+}
+
+/* This is the lower part of the commerce left 10 */
+
+.commerce_left_20 {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.shoe_button {
+  display: none;
+}
+
+/* the four things inside the lower part of commerce_left_10 */
+
+.img_one {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+}
+
+.img_two {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+}
+
+.img_three {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+}
+
+.img_four {
+  grid-column: 4/5;
+  display: flex;
+  justify-content: center;
+}
+
+.first_img_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_one_10 {
+  width: 70%;
+  height: 50%;
+}
+
+/* This is the right section */
+
+
+.commerce_right {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commerce_right_10 {
+  width:60%;
+  height: 50%;
+}
+
+.p_h3 {
+  font-size: 2vh;
+}
+
+.p_h2 {
+  font-size: 4vh;
+}
+
+.p_h4 {
+  font-size: 2vh;
+}
+
+.two_buttons {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.discount {
+  width: 50%;
+  height: 60px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.discount_left {
+  grid-row: 1/2;
+  display: flex;
+  justify-content:flex-start;
+}
+
+.dollar_one, .dollar_two {
+  margin:0px 1em 0px 0px;
+  font-size: 2vh;
+}
+
+.discount_right {
+  grid-row: 2/3;
+
+}
+
+.dollar_three {
+  margin: 0px;
+  text-decoration: line-through;
+  font-size: 2vh;
+}
+
+.one_button {
+  grid-column: 1/2;
+ display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.two_button {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add_cart {
+  width: 80%;
+  height: 50%;
+  border:0;
+}
+
+/*  Carousel   */
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  background:white ;
+  position: absolute;
+  top:0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel_10 {
+  width: 400px;
+  height: 70%;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+/*  background: #FFE61B; */
+}
+
+/* This is the upper part of carousel */
+.carousel_img {
+  grid-row: 1/2;
+  position: relative;
+}
+
+.carousel_img_10 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* This is the lower part of carousel */
+
+.carousel_lower {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Carousel button */
+
+.carousel_button {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+/* Button to change the img of the carousel */
+.carousel_button_left, .carousel_button_right {
+  background: transparent;
+  border:0px;
+  font-size: 5vh;
+}
+
+/* Button to close carousel */
+.carousel_button_close {
+  position: absolute;
+  top: 10px;
+  right:10px; }
+
+/* <!-- layer for stopping sudden click --> */
+
+.cover {
+  width: 100vw;
+  height:100vh;
+  position: absolute;
+  top:0;
+  display: none;
+}
+
+/* This is the cover for cart */
+
+.cart_cover {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: flex-end;
+  align-items: start;
+  position: absolute;
+  top:0;
+}
+
+.cart_cover_10 {
+  width: 250px;
+  height:200px;
+  margin-top: 16vh;
+  margin-right: 10vh;
+}
+
+.content_true {
+  width: 100%;
+  height: 100%;
+position: relative;
+  display: none;
+  grid-template-rows: 1fr 1.5fr 1fr;
+  background: white;
+}
+
+.cart_close , .cart_none_close {
+  position: absolute;
+   top:10px;
+  right:10px;
+}
+
+.cart_h3 {
+  color: #F0A500;
+  text-align: center;
+}
+
+.cart_shoe_img {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cart_shoe {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart_small_img {
+  width: 50%;
+  height: 70%;
+}
+
+.content_title {
+  font-size: 2vh;
+  color: #F0A500;
+}
+
+.cart_dollar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart_button {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart_button_10 {
+  width: 80%;
+  height: 60%;
+  border:0px;
+  color: white;
+  background:#F0A500;
+}
+
+.content_none {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:white;
+}
+
+
+
+.none_h2 {
+  color: orange;
+}
+
+
+
+
+/* Media query for Nav */
+@media only screen and (min-width: 600px) {
+   .bars {
+    grid-template-columns: 0.2fr 1fr  0.2fr 0.2fr;
+  }
+
+  #nav_toggle_label {
+    display: none;
+  }
+
+  .bar_links {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .bar_links a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  .bar_links a:hover {
+    color: black;
+  }
+
+  .cart {
+    grid-column: 3/4;
+  }
+
+  nav {
+    display: none;
+  }
+
+}
+/* */
+
+@media only screen and (max-width: 600px) {
+
+  /* <!-- layer for stopping sudden click --> */
+
+  .cover {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+  }
+
+  .cart_cover {
+    background: grey;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cart_cover_10 {
+    margin:0px;
+  }
+
+  .cover_top {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cover_left_10 {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .cover_left_button , .cover_right_button {
+    background: transparent;
+    border:0;
+    font-size: 3vh;
+  }
+
+
+  .commerce {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .commerce_left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .left_10_img {
+    grid-row: 1/3;
+  }
+
+  .img_shoe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .commerce_left_20 {
+    display: none;
+  }
+
+  .commerce_right {
+    grid-column:1/2 ;
+    grid-row:2/3 ;
+    align-items: flex-start;
+  }
+
+  .commerce_right_10 {
+    width: 80%;
+  }
+
+  /* This is the button for commerce left img */
+
+  .shoe_button {
+    width: 100%;
+  }
+
+
+
+
+}
+
+/* Fonts color */
+
+.p_h3 {
+  color: orange;
+}
+
+.p_h4 {
+  color: #D1D1D1;
+}
+
+.p_h2 {
+  font-family: 'League Gothic', sans-serif;
+  font-weight: lighter;
+}
+
+.dollar_one {
+  font-weight: bold;
+}
+
+.dollar_two {
+  color: #F76E11;
+}
+
+.dollar_three {
+  color: #F5EEDC;
+}
+
+.add_cart {
+  color: white;
+  background: #FF9F45;
+  border-radius: 10px;
+}
+
+.add , .substract {
+  border:0;
+  background:#FFBC80 ;
+  color: #F76E11;
+}
